@@ -65,9 +65,32 @@ body {
 }
 
 .navbar a {
+    position: relative;
     text-decoration: none;
     font-size: 24px;
     color: var(--font);
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--font);
+    transition: width 0.3s;
+}
+
+.navbar a:hover {
+    cursor: pointer;
+}
+
+.navbar a:hover::after {
+    width: 60px;
 }
 
 .maga-logo {
@@ -104,7 +127,7 @@ body {
 }
 
 .desc-art {
-    margin: 30px;
+    margin: 10px;
     padding: 20px;
     font-size: 3rem;
     font-family: "Maname", serif;
@@ -133,4 +156,14 @@ body {
 
 .i {
     width: 30px;
+}
+
+.art-container {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.art-container.show {
+    top: 0;
+    opacity: 1;
 }
