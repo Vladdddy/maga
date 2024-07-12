@@ -32,7 +32,10 @@ html {
 :root {
     --background: #FAFAFA;
     --font: #000000;
-    --navbar: #5d44eb;
+    /*--color: #5d44eb;*/
+    --navbar1: #1bb9e080;
+    --navbar2: #28c2d680;
+    --navbar3: #138ec780;
     --box-shadow: #00000038;
 }
 
@@ -54,6 +57,7 @@ body {
 
 .navbar {
     position: fixed;
+    top: 0;
     width: calc(100vw - (100vw - 100%));
     display: flex;
     justify-content: space-evenly;
@@ -62,6 +66,9 @@ body {
     z-index: 1000;
     box-shadow: 3px 7px 5px var(--box-shadow);
     background-color: var(--navbar);
+    background: linear-gradient(var(--navbar1), var(--navbar2), var(--navbar3));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar a {
@@ -167,3 +174,34 @@ body {
     top: 0;
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*! <>Code from another source</> */
