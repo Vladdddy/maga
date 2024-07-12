@@ -1,10 +1,21 @@
 window.addEventListener('scroll', function () {
-    var artcontainer = document.getElementById('artcontainer');
-    var position = artcontainer.getBoundingClientRect().top;
+    var image1 = document.getElementById('image1');
+    var position = image1.getBoundingClientRect().top;
 
     if (position < window.innerHeight && position > 0) {
-        artcontainer.classList.add('show');
+        image1.classList.add('show');
     } else if (position < window.inner) {
-        artcontainer.classList.remove('show');
+        image1.classList.remove('show');
+    }
+});
+
+window.addEventListener('scroll', function () {
+    var image2 = document.getElementById('image2');
+    var position = image2.getBoundingClientRect().top;
+
+    if (position < window.innerHeight && position > 0) {
+        image2.classList.add('show');
+    } else if (position < window.inner) {
+        image2.classList.remove('show');
     }
 });
