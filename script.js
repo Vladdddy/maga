@@ -1,21 +1,18 @@
 window.addEventListener('scroll', function () {
-    var image1 = document.getElementById('image1');
-    var position = image1.getBoundingClientRect().top;
+    var ids = ['image1', 'image2', 'estate',
+        'digitale', 'contemporaneo', 'biblioteca',
+        'ricola', 'educazione'];
 
-    if (position < window.innerHeight && position > 0) {
-        image1.classList.add('show');
-    } else if (position < window.inner) {
-        image1.classList.remove('show');
+    function toggleVisibility(elementId) {
+        var element = document.getElementById(elementId);
+        var position = element.getBoundingClientRect();
+
+        if (position.top < window.innerHeight && position.bottom > 0) {
+            element.classList.add('show');
+        } else {
+            element.classList.remove('show');
+        }
     }
-});
 
-window.addEventListener('scroll', function () {
-    var image2 = document.getElementById('image2');
-    var position = image2.getBoundingClientRect().top;
-
-    if (position < window.innerHeight && position > 0) {
-        image2.classList.add('show');
-    } else if (position < window.inner) {
-        image2.classList.remove('show');
-    }
+    ids.forEach(toggleVisibility);
 });
