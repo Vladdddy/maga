@@ -307,8 +307,9 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    margin: 60px 10px 0 30px;
+    margin: 60px 0 0 0;
     align-items: baseline;
+    justify-content: space-evenly;
     gap: 100px;
 }
 
@@ -356,6 +357,36 @@ body {
 .sect3 a:hover {
     color: #bbbbbb
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.text-reveal span {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+
 
 
 
