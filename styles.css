@@ -87,12 +87,11 @@ body {
 .navbar a::after {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 0;
     bottom: 0;
-    transform: translateX(-50%);
-    width: 0;
-    height: 100%;
-    transition: width 0.3s;
+    width: 100%;
+    height: 0;
+    transition: height 0.3s;
     background-color: var(--navbar-hover);
 }
 
@@ -101,7 +100,16 @@ body {
 }
 
 .navbar a:hover::after {
-    width: 100%;
+    height: 100%;
+}
+
+.bottom {
+    position: relative;
+    padding: 40px;
+}
+
+.bottom a::after {
+    top: 0;
 }
 
 .maga-logo {
@@ -361,14 +369,6 @@ body {
     color: #bbbbbb
 }
 
-
-
-
-
-
-
-
-
 .text-reveal span {
     opacity: 0;
     display: inline-block;
@@ -384,9 +384,6 @@ body {
 .hidden span {
     opacity: 0;
 }
-
-
-
 
 
 
@@ -447,13 +444,8 @@ button .svg-wrapper {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
     margin-right: 0.5em;
     transition: all 0.3s;
-}
-
-button:hover .svg-wrapper {
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 button:hover svg {
