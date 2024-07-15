@@ -97,11 +97,50 @@ body {
 .navbar a:hover {
     cursor: pointer;
     filter: drop-shadow(1px 1px 20px #0817e6);
+    color: white;
 }
 
 .navbar a:hover::after {
     height: 100%;
 }
+
+
+
+
+
+
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hdn1 {
+    margin-top: 80px;
+}
+
+.hdn2 {
+    margin-top: 120px;
+}
+
+.hdn3 {
+    margin-top: 160px;
+}
+
+
+
+
+
 
 .maga-logo {
     display: flex;
@@ -373,12 +412,6 @@ body {
     }
 }
 
-.hidden span {
-    opacity: 0;
-}
-
-
-
 
 
 
@@ -449,8 +482,8 @@ button:hover svg {
 
 
 
-/*
 
+/*
 .select {
     width: fit-content;
     cursor: pointer;
