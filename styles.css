@@ -33,12 +33,10 @@ html {
 :root {
     --background: #FAFAFA;
     --font: #000000;
-    /*--color: #5d44eb;*/
     --navbar1: #1bb9e080;
     --navbar2: #28c2d680;
-    --navbar3: #138ec780;
     --box-shadow: #00000038;
-    --navbar-hover: #158baf3e;
+    --navbar-hover: #5081dd66;
     --footer: #222222;
 }
 
@@ -68,7 +66,8 @@ body {
     align-items: center;
     z-index: 1000;
     box-shadow: 3px 7px 5px var(--box-shadow);
-    background: linear-gradient(var(--navbar1), var(--navbar2), var(--navbar3));
+    background: -webkit-linear-gradient(to right, #91eae49d, #86a8e7a9, #7f7fd59d);
+    background: linear-gradient(to right, #91eae4a2, #86a8e79d, #7f7fd59a);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -97,19 +96,11 @@ body {
 
 .navbar a:hover {
     cursor: pointer;
+    filter: drop-shadow(1px 1px 20px #0817e6);
 }
 
 .navbar a:hover::after {
     height: 100%;
-}
-
-.bottom {
-    position: relative;
-    padding: 40px;
-}
-
-.bottom a::after {
-    top: 0;
 }
 
 .maga-logo {
@@ -279,6 +270,7 @@ body {
     border: 3px solid white;
     border-radius: 40px;
     padding: 30px 0 30px 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -450,4 +442,110 @@ button .svg-wrapper {
 
 button:hover svg {
     transform: rotate(45deg);
+}
+
+
+
+
+
+
+/*
+
+.select {
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+    transition: 300ms;
+    color: white;
+    overflow: hidden;
+}
+
+.selected {
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1000;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow {
+    position: relative;
+    right: 0px;
+    height: 10px;
+    transform: rotate(-90deg);
+    width: 25px;
+    fill: white;
+    z-index: 1000;
+    transition: 300ms;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    top: -100px;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.select:hover>.options {
+    opacity: 1;
+    top: 0;
+}
+
+.select:hover>.selected .arrow {
+    transform: rotate(0deg);
+}
+
+.option {
+    border-radius: 5px;
+    padding: 5px;
+    transition: 300ms;
+    background-color: #2a2f3b67;
+    width: 150px;
+}
+
+.option:hover {
+    background-color: #323741;
+}
+
+.options input[type="radio"] {
+    display: none;
+}
+
+.options label {
+    display: inline-block;
+}
+
+.options label::before {
+    content: attr(data-txt);
+}
+
+.options input[type="radio"]:checked+label {
+    display: none;
+}
+
+.options input[type="radio"]#all:checked+label {
+    display: none;
+}
+
+.select:has(.options input[type="radio"]#all:checked) .selected::before {
+    content: attr(data-default);
+}
+
+.select:has(.options input[type="radio"]#option-1:checked) .selected::before {
+    content: attr(data-one);
+}
+
+.select:has(.options input[type="radio"]#option-2:checked) .selected::before {
+    content: attr(data-two);
+}
+
+.select:has(.options input[type="radio"]#option-3:checked) .selected::before {
+    content: attr(data-three);
 }
