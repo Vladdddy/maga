@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <title>Museo Maga</title>
+</head>
+
+<body>
+    <section class="sec1">
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="">MOSTRE</a>
+            <a href="">ATTIVITÁ</a>
+            <a href="">COLLEZIONE</a>
+            <a href="">VISITA</a>
+            <a class="dropdown" href="">
+                <p>ALTRO</p>
+                <p class="hidden hdn1">Contatti</p>
+                <p class="hidden hdn2">FAQ</p>
+                <p class="hidden hdn3">Sitemap</p>
+            </a>
+        </div>
+
+        <div class="maga-logo">
+            <img src="img/maga_logo.png" alt="">
+        </div>
+
+        <h1 class="desc h1">Scopri un museo dove puoi esplorare e vivere l'arte in tutte le sue
+            forme.</h1>
+        <h1 class="desc h2">Esplora collezioni uniche e mostre coinvolgenti.</h1>
+
+    </section>
+
+    <section class="sec2">
+        <div class="arts">
+            <div id="image1" class="art-container">
+                <h1 class="desc mostra">"Vorrei scolpire l'universo"</h1>
+
+                <div class="initial-art">
+                    <a href=""><img src="images/scolpire_l'universo.png" alt=""></a>
+                </div>
+
+                <h1 class="desc author">Vittorio Taverni</h1>
+                <h1 class="desc"><img class="desc i" src="icons/calendar.png" alt="">
+                    28 aprile 2024 - 01 settembre 2024</h1>
+            </div>
+
+            <div id="image2" class="art-container">
+                <h1 class="desc mostra">"Astrazione Mediale"</h1>
+
+                <div class="initial-art">
+                    <a href=""><img src="images/astrazione_mediale.png" alt=""></a>
+                </div>
+
+                <h1 class="desc author">Davide Maria</h1>
+                <h1 class="desc"><img class="desc i" src="icons/calendar.png" alt="">
+                    28 aprile 2024 - 01 settembre 2024</h1>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <section class="sec3">
+        <div class="arts">
+            <div id="estate" class="art-container">
+                <div class="maga-art activity">
+                    <img src="images/estate.png" alt="">
+                </div>
+
+                <a href="" class="desc desc-art">ESTATE ALL'HIC MAGA
+                    <br>MAJNO 2024</a>
+            </div>
+
+            <!---------------------------------------------------------->
+
+            <div id="digitale" class="art-container">
+                <div class="maga-art activity">
+                    <img src="images/digitale.gif" alt="">
+                </div>
+
+                <a href="" class="desc desc-art">IL MUSEO NELL'ERA POST
+                    <br>DIGITALE</a>
+            </div>
+
+            <!---------------------------------------------------------->
+
+            <div id="contemporaneo" class="art-container">
+                <div class="maga-art activity">
+                    <img src="images/contemporaneo.jpg" alt="">
+                </div>
+
+                <a href="" class="desc desc-art">ARCHIVI DEL
+                    <br>CONTEMPORANEO</a>
+            </div>
+
+            <!---------------------------------------------------------->
+
+            <div id="biblioteca" class="art-container">
+                <div class="maga-art activity">
+                    <img src="images/biblioteca.png" alt="">
+                </div>
+
+                <a href="" class="desc desc-art">HUB ISTITUTI CULTURALI
+                    <br>CITTA DI GALLARATE</a>
+            </div>
+
+            <!---------------------------------------------------------->
+
+            <div id="ricola" class="art-container">
+                <div class="maga-art activity">
+                    <img src="images/ricola.jpg" alt="">
+                </div>
+
+                <a href="" class="desc desc-art">RICOLA ARTE & NATURA</a>
+            </div>
+
+            <!---------------------------------------------------------->
+
+            <div id="educazione" class="art-container">
+                <div class="maga-art activity">
+                    <img src="images/educazione.jpg" alt="">
+                </div>
+
+                <a href="" class="desc desc-art">MAGA E MISSONI PER
+                    <br>L'ARTE E L'EDUCAZIONE</a>
+            </div>
+
+        </div>
+    </section>
+
+    <br>
+
+    <section class="sec4">
+        <h1 id="text" class="desc title text-reveal hidden">Ti aspettano tante altre mostre e attività!</h1>
+        <h1 class="desc newsletter">Iscriviti alla newsletter del Museo!</h1>
+        <div class="email">
+            <input class="desc email" type="email" required name="" id="" placeholder="Scrivi la tua email">
+        </div>
+        <a href="" class="button">
+            <button class="button">
+                <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor"
+                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <span>Invia</span>
+            </button>
+        </a>
+        <h1 class="desc dati">Non condivideremo la tua mail con nessuno.</h1>
+        <!--
+        <div class="select">
+            <div class="selected" data-default="Altro" data-one="option-1" data-two="option-2" data-three="option-3">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="arrow">
+                    <path
+                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+                    </path>
+                </svg>
+            </div>
+            <div class="options">
+                <div title="all">
+                    <input id="all" name="option" type="radio" checked="" />
+                    <label class="option" for="all" data-txt="All"></label>
+                </div>
+                <div title="option-1">
+                    <input id="option-1" name="option" type="radio" />
+                    <label class="option" for="option-1" data-txt="option-1"></label>
+                </div>
+                <div title="option-2">
+                    <input id="option-2" name="option" type="radio" />
+                    <label class="option" for="option-2" data-txt="option-2"></label>
+                </div>
+                <div title="option-3">
+                    <input id="option-3" name="option" type="radio" />
+                    <label class="option" for="option-3" data-txt="option-3"></label>
+                </div>
+            </div>
+        </div>
+        -->
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="section1">
+                <img class="svgs" src="img/maga_image.svg" alt="">
+                <p class="p-custom">Fondazione Galleria d'Arte Moderna
+                    <br> e Contemporanea 'Silvio Zanella'
+                </p>
+                <p class="p-custom cont">Via Egidio De Magri 1
+                    <br>21013 Gallarate (VA)
+                    <br>Tel. +39 0331 706011
+                </p>
+                <div class="socials">
+                    <a href=""><img class="i icons" src="icons/insta.png" alt=""></a>
+                    <a href=""><img class="i icons" src="icons/facebook.png" alt=""></a>
+                    <a href=""><img class="i icons" src="icons/twitter.png" alt=""></a>
+                    <a href=""><img class="i icons" src="icons/yt.png" alt=""></a>
+                </div>
+            </div>
+            <div class="section2">
+                <p class="p-custom">MA*GA è un museo associato </p>
+                <p class="p-custom amici"><a href="https://www.amaci.org/" target="_blank">AMI.CI</a></p>
+                <a href="https://www.regione.lombardia.it/wps/portal/istituzionale/HP/DettaglioRedazionale/scopri-la-lombardia/cultura-e-tradizione/musei-ed-ecomusei/red-musei-scopril-cult"
+                    target="_blank"><img class="icons lombardia" src="img/lombardia.svg" alt=""></a>
+            </div>
+            <div class="section3">
+                <div class="sect3">
+                    <p class="p-custom"><a href="">Il museo</a></p>
+                    <p class="p-custom"><a href="">Le mostre</a></p>
+                    <p class="p-custom"><a href="">Le attività</a></p>
+                    <p class="p-custom"><a href="">Visita</a></p>
+                    <p class="p-custom"><a href="">Calendario</a></p>
+                </div>
+
+            </div>
+            <div class="section4">
+                <div class="sect3">
+                    <p class="p-custom"><a href="">La collezione</a></p>
+                    <p class="p-custom"><a href="">Le pubblicazioni</a></p>
+                    <p class="p-custom"><a href="">Educazione</a></p>
+                    <p class="p-custom"><a href="">Sostieni</a></p>
+                </div>
+            </div>
+            <div class="section5">
+                <div class="sect3">
+                    <p class="p-custom"><a href="">Iscriviti alla Newsletter</a></p>
+                    <p class="p-custom"><a href="">Amministrazione Trasparente</a></p>
+                    <p class="p-custom"><a href="">Informativa Trattamento Dati</a></p>
+                    <p class="p-custom"><a href="">Privacy Policy</a></p>
+                    <p class="p-custom"><a href="">Cookie Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
