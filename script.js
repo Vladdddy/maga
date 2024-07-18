@@ -16,37 +16,3 @@ window.addEventListener('scroll', function () {
 
     ids.forEach(toggleVisibility);
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    const textElement = document.getElementById('text');
-    const text = textElement.innerText;
-    textElement.innerHTML = '';
-
-    // Create span elements for each character
-    text.split('').forEach((char, index) => {
-        const span = document.createElement('span');
-        if (char === ' ') {
-            span.innerHTML = '&nbsp;';
-        } else {
-            span.innerText = char;
-        }
-        span.style.animationDelay = `${index * 0.02}s`;
-        textElement.appendChild(span);
-    });
-
-    // Function to handle intersection changes
-    function handleIntersection(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                textElement.classList.remove('hidden');
-            } else {
-                textElement.classList.add('hidden');
-            }
-        });
-    }
-
-    // Intersection Observer to trigger animation
-    const observer = new IntersectionObserver(handleIntersection, { threshold: 0.1 });
-
-    observer.observe(textElement);
-});
