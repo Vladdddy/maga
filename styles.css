@@ -71,6 +71,7 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: height 0.3 ease;
+    overflow: hidden;
 }
 
 .navbar a {
@@ -103,45 +104,6 @@ body {
 
 .navbar a:hover::after {
     height: 100%;
-}
-
-.dropdown {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hidden {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    filter: none;
-}
-
-.hide {
-    display: block;
-}
-
-.hdn1 {
-    top: 100%;
-}
-
-.hdn2 {
-    top: calc(100% + 40px);
-}
-
-.hdn3 {
-    top: calc(100% + 80px);
-}
-
-.dropdown:hover .hidden {
-    display: flex;
-}
-
-.dropdown:hover .hide {
-    display: none;
 }
 
 .maga-logo {
