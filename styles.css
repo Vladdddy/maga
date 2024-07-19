@@ -390,6 +390,7 @@ button {
 
 button:hover {
     transform: translateY(-3px);
+    background: linear-gradient(to bottom, #323eea52 0%, #1f80ff89 100%);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
