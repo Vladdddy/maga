@@ -87,7 +87,6 @@ html {
     width: 900px;
     height: 500px;
     border-radius: 10px;
-    border: 2px solid transparent;
     border: 2px solid #ecedef;
 }
 
@@ -96,7 +95,7 @@ html {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin: 10px;
+    margin: 10px
 }
 
 .details-mostre h1 {
@@ -110,7 +109,7 @@ html {
 
 .cont-mostre {
     border-radius: 20px;
-    padding-top: 60px;
+    padding-top: 20px;
     margin: 50px 150px 0 150px;
     background: hsla(90, 33%, 94%, 1);
     background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
@@ -141,6 +140,7 @@ html {
 .title-mostre:hover,
 .title-mostre.active {
     color: #0b65b9;
+    transition: ease-in .4s;
 }
 
 .calendar {
@@ -169,6 +169,98 @@ html {
     font-weight: 300;
 }
 
+.position-teller a {
+    text-decoration: none;
+    color: black;
+}
+
 .position-teller:hover {
     opacity: 1;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
+    user-select: none;
+    position: relative;
+}
+
+.filters:hover .options {
+    display: flex;
+}
+
+.filters-other {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #2b2b2b;
+    color: #ecedef;
+    padding: 10px 15px 10px 15px;
+    border-radius: 50px;
+}
+
+.filters-other:hover {
+    cursor: pointer;
+}
+
+.filter-icon {
+    margin-left: 15px;
+    width: 22px;
+}
+
+.options {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
+    user-select: none;
+    position: relative;
+}
+
+.filters:hover .options {
+    display: flex;
+}
+
+.filters-other {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #2b2b2b;
+    color: #ecedef;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.filters-other:hover {
+    cursor: pointer;
+}
+
+.filter-icon {
+    margin-left: 15px;
+    width: 22px;
+}
+
+.options {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
 }
