@@ -6,20 +6,14 @@ function toggleActiveClass(element) {
 
 
 
-
-
-
-
-
-
-
 /* <>Code from another source</> */
 
 window.addEventListener('scroll', function () {
     var ids = ['image1', 'image2', 'estate',
         'digitale', 'contemporaneo', 'biblioteca',
         'ricola', 'educazione', 'image1_mostre',
-        'image2_mostre', 'image3_mostre'];
+        'image2_mostre', 'image3_mostre', 'cont1_visita',
+        'cont2_visita'];
 
     function toggleVisibility(elementId) {
         var element = document.getElementById(elementId);
