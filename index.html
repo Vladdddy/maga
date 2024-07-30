@@ -8,25 +8,21 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <title>Museo Maga</title>
+    <link rel="icon" type="image/x-icon" href="icons/maga_iframe.png">
+    <title>Museo MA*GA - Homepage</title>
 </head>
 
 <body>
-    <section class="sec1">
-        <div class="navbar">
-            <a href="index.html">HOME</a>
-            <a href="">MOSTRE</a>
-            <a href="">ATTIVITÁ</a>
-            <a href="">COLLEZIONE</a>
-            <a href="">VISITA</a>
-            <a class="dropdown" href="">
-                <p>ALTRO</p>
-                <p class="hidden hdn1">Contatti</p>
-                <p class="hidden hdn2">FAQ</p>
-                <p class="hidden hdn3">Sitemap</p>
-            </a>
-        </div>
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="mostre.html">MOSTRE</a>
+        <a href="">ATTIVITÁ</a>
+        <a href="">COLLEZIONE</a>
+        <a href="">VISITA</a>
+        <a href="">SOSTIENI</a>
+    </div>
 
+    <section class="sec1">
         <div class="maga-logo">
             <img src="img/maga_logo.png" alt="">
         </div>
@@ -43,7 +39,7 @@
                 <h1 class="desc mostra">"Vorrei scolpire l'universo"</h1>
 
                 <div class="initial-art">
-                    <a href=""><img src="images/scolpire_l'universo.png" alt=""></a>
+                    <a href="mostre.html#image1_mostre"><img src="images/scolpire_l'universo.png" alt=""></a>
                 </div>
 
                 <h1 class="desc author">Vittorio Taverni</h1>
@@ -55,7 +51,7 @@
                 <h1 class="desc mostra">"Astrazione Mediale"</h1>
 
                 <div class="initial-art">
-                    <a href=""><img src="images/astrazione_mediale.png" alt=""></a>
+                    <a href="mostre.html#image2_mostre"><img src="images/astrazione_mediale.png" alt=""></a>
                 </div>
 
                 <h1 class="desc author">Davide Maria</h1>
@@ -159,35 +155,6 @@
             </button>
         </a>
         <h1 class="desc dati">Non condivideremo la tua mail con nessuno.</h1>
-        <!--
-        <div class="select">
-            <div class="selected" data-default="Altro" data-one="option-1" data-two="option-2" data-three="option-3">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="arrow">
-                    <path
-                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
-                    </path>
-                </svg>
-            </div>
-            <div class="options">
-                <div title="all">
-                    <input id="all" name="option" type="radio" checked="" />
-                    <label class="option" for="all" data-txt="All"></label>
-                </div>
-                <div title="option-1">
-                    <input id="option-1" name="option" type="radio" />
-                    <label class="option" for="option-1" data-txt="option-1"></label>
-                </div>
-                <div title="option-2">
-                    <input id="option-2" name="option" type="radio" />
-                    <label class="option" for="option-2" data-txt="option-2"></label>
-                </div>
-                <div title="option-3">
-                    <input id="option-3" name="option" type="radio" />
-                    <label class="option" for="option-3" data-txt="option-3"></label>
-                </div>
-            </div>
-        </div>
-        -->
     </section>
 
     <section class="footer">
@@ -202,10 +169,14 @@
                     <br>Tel. +39 0331 706011
                 </p>
                 <div class="socials">
-                    <a href=""><img class="i icons" src="icons/insta.png" alt=""></a>
-                    <a href=""><img class="i icons" src="icons/facebook.png" alt=""></a>
-                    <a href=""><img class="i icons" src="icons/twitter.png" alt=""></a>
-                    <a href=""><img class="i icons" src="icons/yt.png" alt=""></a>
+                    <a href="https://www.instagram.com/museomaga/" target="_blank"><img class="i icons"
+                            src="icons/insta.png" alt=""></a>
+                    <a href="https://it-it.facebook.com/maga.museo" target="_blank"><img class="i icons"
+                            src="icons/facebook.png" alt=""></a>
+                    <a href="https://x.com/MuseoMaga" target="_blank"><img class="i icons" src="icons/twitter.png"
+                            alt=""></a>
+                    <a href="https://www.youtube.com/user/MagaMuseo" target="_blank"><img class="i icons"
+                            src="icons/yt.png" alt=""></a>
                 </div>
             </div>
             <div class="section2">
@@ -217,7 +188,7 @@
             <div class="section3">
                 <div class="sect3">
                     <p class="p-custom"><a href="">Il museo</a></p>
-                    <p class="p-custom"><a href="">Le mostre</a></p>
+                    <p class="p-custom"><a href="mostre.html">Le mostre</a></p>
                     <p class="p-custom"><a href="">Le attività</a></p>
                     <p class="p-custom"><a href="">Visita</a></p>
                     <p class="p-custom"><a href="">Calendario</a></p>
