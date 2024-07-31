@@ -110,7 +110,7 @@ html {
 .cont-mostre {
     border-radius: 20px;
     padding-top: 20px;
-    margin: 50px 150px 0 150px;
+    margin: 60px 150px 0 150px;
     background: hsla(90, 33%, 94%, 1);
     background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
     background: -moz-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
@@ -186,15 +186,6 @@ html {
     margin-left: 40px;
     user-select: none;
     position: relative;
-    width: 130px;
-}
-
-.filters:hover .options {
-    display: flex;
-}
-
-.filters:hover {
-    width: 350px;
 }
 
 .filters-other {
@@ -208,19 +199,42 @@ html {
     border-radius: 50px;
 }
 
-.filters-other:hover {
-    cursor: pointer;
-}
-
 .filter-icon {
     margin-left: 15px;
     width: 22px;
 }
 
 .options {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-left: 10px;
+    margin-left: 30px;
 }
+
+.options input:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*! <>Code from another source</> */
