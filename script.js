@@ -13,7 +13,8 @@ window.addEventListener('scroll', function () {
         'digitale', 'contemporaneo', 'biblioteca',
         'ricola', 'educazione', 'image1_mostre',
         'image2_mostre', 'image3_mostre', 'cont1_visita',
-        'cont2_visita', 'cont3_visita'];
+        'cont2_visita', 'cont3_visita', 'point1',
+        'point2', 'container-sostieni'];
 
     function toggleVisibility(elementId) {
         var element = document.getElementById(elementId);

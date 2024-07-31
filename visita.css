@@ -59,6 +59,8 @@
     background: #7F7FD5;
     background: -webkit-linear-gradient(to right, #91eae477, #86a8e77a, #7f7fd585);
     background: linear-gradient(to right, #91eae483, #86a8e793, #7f7fd5a6);
+    box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
 }
 
 .decoration-visita {
@@ -119,7 +121,8 @@
     border: 1.8px solid #363636;
     border-radius: 20px;
     padding: 10px;
-    margin-top: 5px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    margin: 15px;
 }
 
 details>summary {
@@ -152,16 +155,14 @@ details>summary::-webkit-details-marker {
 
 
 
-
-
-
-
 /*! <>Code from another source</> */
 
 gmpx-store-locator {
     width: 200vh;
     height: 60vh;
     border-radius: 20px;
+    box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
     --gmpx-color-surface: #fff;
     --gmpx-color-on-surface: #212121;
     --gmpx-color-on-surface-variant: #757575;
