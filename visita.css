@@ -2,8 +2,8 @@
 
 .sec1-visita {
     height: 100vh;
-    background-color: #ecedef;
     font-family: "Comfortaa", sans-serif;
+    background-color: #ecedef;
 }
 
 .container-visita {
@@ -73,7 +73,7 @@
     font-size: 22 px;
 }
 
-.p-visita p {
+.p-visita {
     overflow: hidden;
 }
 
@@ -112,7 +112,14 @@
 .details-visita {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     font-size: 14px;
+    align-items: center;
+    gap: 5px;
+    border: 1.8px solid #363636;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 5px;
 }
 
 details>summary {
@@ -126,4 +133,47 @@ details>summary::-webkit-details-marker {
 .icon-visita {
     width: 15px;
     margin-left: 5px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*! <>Code from another source</> */
+
+gmpx-store-locator {
+    width: 200vh;
+    height: 60vh;
+    border-radius: 20px;
+    --gmpx-color-surface: #fff;
+    --gmpx-color-on-surface: #212121;
+    --gmpx-color-on-surface-variant: #757575;
+    --gmpx-color-primary: #1967d2;
+    --gmpx-color-outline: #e0e0e0;
+    --gmpx-fixed-panel-width-row-layout: 28.5em;
+    --gmpx-fixed-panel-height-column-layout: 65%;
+    --gmpx-font-family-base: "Roboto", sans-serif;
+    --gmpx-font-family-headings: "Roboto", sans-serif;
+    --gmpx-font-size-base: 0.875rem;
+    --gmpx-hours-color-open: #188038;
+    --gmpx-hours-color-closed: #d50000;
+    --gmpx-rating-color: #ffb300;
+    --gmpx-rating-color-empty: #e0e0e0;
 }

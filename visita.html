@@ -27,8 +27,20 @@
         </div>
 
         <div class="map">
-            <!--MAP API-->
+            <gmpx-api-loader key="AIzaSyDuQqFgn5mduggHNhjIe83d1JoUrIXJs5o"
+                solution-channel="GMP_QB_locatorplus_v10_cABD"></gmpx-api-loader>
+            <gmpx-store-locator map-id="DEMO_MAP_ID"></gmpx-store-locator>
         </div>
+
+        <script type="module">
+            document.addEventListener('DOMContentLoaded', async () => {
+                await customElements.whenDefined('gmpx-store-locator');
+                const locator = document.querySelector('gmpx-store-locator');
+                locator.configureFromQuickBuilder(CONFIGURATION);
+            });
+        </script>
+
+        <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
     </section>
 
     <section class="sec2-visita">
@@ -105,34 +117,35 @@
                     <p>Biglietto Intero: <span class="price">€ 7,00</span></p>
                 </div>
 
+                <p>Biglietto Ridotto: <span class="price">€ 5,00</span></p>
                 <div class="p-visita">
-                    <p>Biglietto Ridotto: <span class="price">€ 5,00</span></p>
                     <details class="details-details-visita">
                         <summary class="title-mostre subtitle" onclick="toggleActiveClass(this)">
                             A chi è riservato?
                             <img class="i icon-visita" src="icons/arrowdown_blue.png" alt="">
                         </summary>
-                        <p class="details-visita">
-                            - under 26 anni; <br>
-                            - over 70 anni; <br>
-                            - residenti a Gallarate; <br>
-                            - docenti; <br>
-                            - soci FAI e Touring Club; <br>
-                            - soci CAI Lombardia; <br>
-                            - soci Amici Museo Bodini; <br>
-                            - tesserati Italia Nostra; <br>
-                            - Ordine degli Architetti Varese; <br>
-                            - dipendenti Ricola; <br>
-                            - dipendenti Saporiti Italia; <br>
-                            - dipendenti Missoni S.p.A.; <br>
-                            - dipendenti Sea; <br>
-                            - dipendenti Lamberti S.p.A.; <br>
-                            - dipendenti Merlo Grup; <br>
-                            - dipendenti CRAL Whirlpool Area Varese; <br>
-                            - dipendenti Camal - Le vie del cotone; <br>
-                            - dipendenti Grassi S.p.A.; <br>
-                            - dipendenti Camera di Commercio Varese; <br>
-                            - dipendenti aziende associate a Confindustria Varese.</p>
+                        <div class="details-visita">
+                            <p>- under 26 anni</p>
+                            <p>- over 70 anni</p>
+                            <p>- residenti a Gallarate</p>
+                            <p>- docenti</p>
+                            <p>- soci FAI e Touring Club</p>
+                            <p>- soci CAI Lombardia</p>
+                            <p>- soci Amici Museo Bodini</p>
+                            <p>- tesserati Italia Nostra</p>
+                            <p>- Ordine degli Architetti Varese</p>
+                            <p>- dipendenti Ricola</p>
+                            <p>- dipendenti Saporiti Italia</p>
+                            <p>- dipendenti Missoni S.p.A.</p>
+                            <p>- dipendenti Sea</p>
+                            <p>- dipendenti Lamberti S.p.A.</p>
+                            <p>- dipendenti Merlo Grup</p>
+                            <p>- dipendenti CRAL Whirlpool Area Varese</p>
+                            <p>- dipendenti Camal - Le vie del cotone</p>
+                            <p>- dipendenti Grassi S.p.A.</p>
+                            <p>- dipendenti Camera di Commercio Varese</p>
+                            <p>- dipendenti aziende associate a Confindustria Varese</p>
+                        </div>
                     </details>
                 </div>
 
@@ -141,14 +154,28 @@
                     </p>
                 </div>
 
+                <p>Biglietto Gratuito: <span class="price">FREE</span></p>
                 <div class="p-visita">
-                    <p>Biglietto Gratuito: <span class="price">FREE</span></p>
                     <details>
                         <summary class="title-mostre subtitle" onclick="toggleActiveClass(this)">
                             A chi è riservato?
                             <img class="i icon-visita" src="icons/arrowdown_blue.png" alt="">
                         </summary>
-                        <p class="details-visita">Lorem Ipsum</p>
+                        <div class="details-visita">
+                            <p>- under 26 anni</p>
+                            <p>- under 11 anni</p>
+                            <p>- persone diversamente abili con accompagnatore</p>
+                            <p>- soci ICOM</p>
+                            <p>- AMICI del MA*GA</p>
+                            <p>- AMACI</p>
+                            <p>- MART Membership</p>
+                            <p>- Club GAMeC</p>
+                            <p>- abbonamento Musei Lombardia Valle d'Aosta</p>
+                            <p>- giornalisti accreditati con tesserino in corso di validità</p>
+                            <p>- possessori ticket omaggio cartaceo MA*GA</p>
+                            <p>- 1 insegnante ogni 10 alunni</p>
+                            <p>- guide turistiche abilitate</p>
+                        </div>
                     </details>
                 </div>
             </div>
