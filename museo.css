@@ -1,0 +1,44 @@
+.sec1-museo {
+    height: 85vh;
+    background-image: url(images/maga_image_museo.jpg);
+    background-size: 95% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    user-select: none;
+    background-color: #ecedef;
+    overflow: hidden;
+}
+
+.title-museo {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 3rem;
+    background: linear-gradient(white, #92b0ed);
+    background-clip: text;
+    color: transparent;
+}
+
+.title-title-museo {
+    display: flex;
+    flex-direction: row;
+    font-size: 120px;
+}
+
+.ptitle-museo {
+    font-size: 170px;
+}
+
+.sec2-museo {
+    height: 100vh;
+    background-color: #ecedef;
+}
+
+.ptm {
+    background-color: #363636;
+}
+
+.ptm a {
+    color: white;
+}
