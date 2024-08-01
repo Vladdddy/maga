@@ -145,9 +145,13 @@ details>summary::-webkit-details-marker {
     margin-top: 20px;
 }
 
+.ptv {
+    background-color: #363636;
+}
 
-
-
+.ptv a {
+    color: white;
+}
 
 
 
