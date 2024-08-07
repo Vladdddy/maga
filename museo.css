@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding-top: 3rem;
+    padding-top: 4rem;
     background: linear-gradient(white, #92b0ed);
     background-clip: text;
     color: transparent;
@@ -23,17 +23,42 @@
 .title-title-museo {
     display: flex;
     flex-direction: row;
-    font-size: 120px;
+    font-size: 100px;
 }
 
 .ptitle-museo {
-    font-size: 170px;
+    font-size: 135px;
 }
 
 .sec2-museo {
     height: 100vh;
     background-color: #ecedef;
 }
+
+.storia-museo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 50px;
+    color: #242424;
+    font-family: "Kanit", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .ptm {
     background-color: #363636;
